@@ -28,6 +28,12 @@ $ ./strtime "9:39:46pm 1 Feb 2011"\
 * Prüfen Sie, ob die Locale nach Programmende bleibt.
 * Falls ja, erweitern Sie ihr Programm, um am Ende die vor dem Aufruf gesetzte Locale wieder herzustellen.
 
+### d) Zeitmessung, 30'
+* Schreiben Sie ein eigenes *time* Programm, *my_time.c*
+* Das zu messende Programm soll aus *argv* gelesen und mit *fork()* und *execve()* gestartet werden.
+* Der Parent Prozess wartet mit *wait()*, und bestimmt die Laufzeit, real und CPU Zeit, des Child Prozesses.
+* Die Ausgabe soll derjenigen von *time* entsprechen.
+
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
 * GitHub [Issue erstellen](../../issues/new) mit "Bitte um Review, @tamberg".
