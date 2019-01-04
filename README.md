@@ -17,10 +17,8 @@ $ ./calendar_time</pre>
 * Lesen Sie das folgenden [TLPI](http://man7.org/tlpi/) Beispiel Programm:<pre>
 [strtime.c](http://man7.org/tlpi/code/online/book/time/strtime.c.html)</pre>
 * Vergleichen Sie den Output der Kommandos:<pre>
-$ ./strtime "9:39:46pm 1 Feb 2011"\
- "%I:%M:%S%p %d %b %Y"
-$ ./strtime "9:39:46pm 1 Feb 2011"\
- "%I:%M:%S%p %d %b %Y" "%F %T"</pre>
+$ ./strtime "9:39:46pm 1 Feb 2011" "%I:%M:%S%p %d %b %Y"
+$ ./strtime "9:39:46pm 1 Feb 2011" "%I:%M:%S%p %d %b %Y" "%F %T"</pre>
 * Geben Sie das Datum im [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) Format aus.
 
 ### c) Locale, 15'
