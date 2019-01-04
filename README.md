@@ -5,8 +5,13 @@ Für Slides und Code Beispiele, siehe [Lektion 13](../../../fhnw-syspr/blob/mast
 > *Achtung: Arbeiten Sie nicht direkt auf diesem Repository.*<br/>
 > *[Prüfen Sie die vorhandenen Forks, um das Repository für Ihre Klasse zu finden.](../../network/members)*
 
-### a) X, 30'
-* X
+### a) Kalender-Zeit, 15'
+* Lesen Sie das folgenden [TLPI](http://man7.org/tlpi/) Beispiel Programm:<pre>
+[calendar_time.c](http://man7.org/tlpi/code/online/book/time/calendar_time.c.html)</pre>
+* Vergleichen Sie den Output der Kommandos:<pre>
+$ ./date
+$ ./calendar_time</pre>
+* Schreiben Sie ein eigenes Programm, welches den Überlauf von Sekunden bei *mktime()* zeigt.
 
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
