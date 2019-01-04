@@ -13,6 +13,16 @@ $ ./date
 $ ./calendar_time</pre>
 * Schreiben Sie ein eigenes Programm, welches den Überlauf von Sekunden bei *mktime()* zeigt.
 
+### b) Zeit parsen/formatieren, 15'
+* Lesen Sie das folgenden [TLPI](http://man7.org/tlpi/) Beispiel Programm:<pre>
+[strtime.c](http://man7.org/tlpi/code/online/book/time/strtime.c.html)</pre>
+* Vergleichen Sie den Output der Kommandos:<pre>
+$ ./strtime "9:39:46pm 1 Feb 2011"\
+ "%I:%M:%S%p %d %b %Y"
+$ ./strtime "9:39:46pm 1 Feb 2011"\
+ "%I:%M:%S%p %d %b %Y" "%F %T"</pre>
+* Geben Sie das Datum im [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) Format aus.
+
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
 * GitHub [Issue erstellen](../../issues/new) mit "Bitte um Review, @tamberg".
