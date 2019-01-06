@@ -32,6 +32,15 @@ $ ./strtime "9:39:46pm 1 Feb 2011" "%I:%M:%S%p %d %b %Y" "%F %T"</pre>
 * Der Parent Prozess wartet mit *wait()*, und bestimmt die Laufzeit, real und CPU Zeit, des Child Prozesses.
 * Die Ausgabe soll derjenigen von *time* entsprechen.
 
+### e) Timer, 15'
+* Lesen Sie das folgenden [TLPI](http://man7.org/tlpi/) Beispiel Programm:<pre>
+[real_timer.c](http://man7.org/tlpi/code/online/book/timers/real_timer.c.html)</pre>
+* Testen Sie den Timer, z.B. mit den Kommandos:<pre>
+$ ./real_timer 1 800000 1 0 # 1.8s, 1s Periode
+$ ./real_timer 3 0 # einmaliger Timer, nach 3s</pre>
+* Ändern Sie das Programm, dass der Timer CPU Zeit
+statt reale Zeit verwendet, und testen Sie den Code.
+
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
 * GitHub [Issue erstellen](../../issues/new) mit "Bitte um Review, @tamberg".
